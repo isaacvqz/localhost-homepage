@@ -50,11 +50,19 @@
                     // open this directory
                     $myDirectory = opendir($_SERVER['DOCUMENT_ROOT'] . "/.");
                     $list = 0;
+                    $ingnorados = array(
+                                    ".",
+                                    "..",
+                                    "material",
+                                    "index.php",
+                                    "crear.php",
+                                    "info.php"
+                                );
 
                     // get each entry
                     while (false !== ($entryName = readdir($myDirectory)))
                     {
-                        if ($entryName != "." && $entryName != ".." && $entryName != ".DS_Store" && $entryName != "material" && $entryName != "index.php" && $entryName != "indexx.php" && $entryName != "MAMP-PRO-Logo.png" && $entryName != "crear.php" && $entryName != "desktop.ini" && $entryName != "info.php")
+                        if (!in_array($entryName, $ingnorados))
                         {
                             $dirArray[] = $entryName;
                             //  count elements in array
