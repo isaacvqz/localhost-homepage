@@ -56,7 +56,8 @@
                                     "material",
                                     "index.php",
                                     "crear.php",
-                                    "info.php"
+                                    "info.php",
+                                    "desktop.ini"
                                 );
 
                     // get each entry
