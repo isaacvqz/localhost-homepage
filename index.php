@@ -57,7 +57,8 @@
                                     "index.php",
                                     "crear.php",
                                     "info.php",
-                                    "desktop.ini"
+                                    "desktop.ini",
+                                    "MAMP-PRO-Logo.png"
                                 );
 
                     // get each entry
